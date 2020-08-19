@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author sarun
+ * @author sarun, ronnachai
  */
 public class CustomerMailApplication {
 
@@ -23,8 +23,12 @@ public class CustomerMailApplication {
             case "Regular":
                 customer = new RegularCustomer();
                 break;
-            //complete MountainCustomer
-            //complete DelinquentCustomer 
+            case "Mountain":
+                customer = new MountainCustomer();
+                break;
+           case "Delinquent":
+                customer = new DelinquentCustomer();
+                break;
         }
     }
     public String generateMail() {
